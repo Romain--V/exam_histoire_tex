@@ -1,0 +1,115 @@
+\documentclass[a4paper,12pt]{exam}                                                   
+
+%\noprintanswers % Pour ne pas imprimer les réponses (énoncé)
+\addpoints % Pour compter les points
+\pointsinrightmargin % Pour avoir les points dans la marge à droite
+%\bracketedpoints % Pour avoir les points entre crochets
+%\nobracketedpoints % Pour ne pas avoir les points entre crochets
+\pointformat{.../\textbf{\themarginpoints}}
+% \noaddpoints % pour ne pas compter les points
+%\qformat{\textbf{Question\thequestion}\quad(\thepoints)\hfill} % Pour définir le style des questions (facultatif)
+%\qformat{\thequestiontitle \dotfill \thepoints}
+
+
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Linux Libertine}
+%\usepackage[margin=1cm]{geometry}
+    \usepackage[francais]{babel}
+    \title{Test de connaissances : \color{color2}Qui perd perd ...}
+    \date{}
+     
+    % Si on imprime les réponses
+    \ifprintanswers
+    \newcommand{\rep}[1]{}
+    \newcommand{\chariot}{}
+    \else
+    \newcommand{\rep}[1]{\fillwithdottedlines{#1}}
+    \newcommand{\chariot}{\newpage}
+    \fi
+     
+%\usepackage{titling}
+%\renewcommand{\maketitlehooka}
+
+ 
+\begin{document}
+
+\begin{minipage}{4cm}
+  Nom :
+  
+  Prénom :
+  
+  Classe : 4\up{e}3
+\end{minipage}
+\hfill
+\begin{minipage}{3cm}
+
+{\small    \begin{questions} \question[1] Orthographe
+\question[1] Présentation \end{questions}
+}
+Date : 
+\end{minipage}
+
+
+\vspace{1cm}
+
+\begin{center}
+
+{\Large Devoir de géographie : les espaces majeurs de la production des échanges}
+
+\vspace{0.5cm}
+  \end{center}
+Appréciation : \hfill  {\large  …/\numpoints\ } %\quad\quad …/\textbf{20}
+
+
+\vspace{2cm}
+
+
+
+ 
+\begin{questions} % Début de l'examen. Débute la numérotation des questions 
+\section*{Quatre questions}
+ 
+ 
+\question[5] Quelle est la différence entre un pigeon ?
+%    \begin{solution}
+%   Solution
+%    \end{solution}
+\rep{2cm}
+ 
+\question[5] Texte de la question sur 5 point ?
+%    \begin{solution}
+%    \end{solution}
+\rep{2cm}
+ 
+\question[4] Dans quel type de sites construit-on des ports industriels ? ?
+%    \begin{solution}
+%    Solution
+%    \end{solution}
+\rep{2cm}
+ 
+     
+\question[4] Pourquoi les industries s'implantent-elles près des ports ?
+\answerline
+%    \begin{solution}
+%    Parce que
+%    \end{solution}
+%  \rep{2cm}
+ 
+  \end{questions}
+
+ \begin{questions}
+     \section*{Une question}
+     \subsection*{Choix multiple}
+ \question Quels aménagements ne trouvent-on pas sur des littoraux touristiques ?
+ \begin{oneparchoices}
+ \choice des hôtels
+ \choice des maisons
+ \choice des routes
+ \choice des bowlings
+ %\CorrectChoice Socrates
+ \end{oneparchoices}
+ \end{questions}
+ 
+\end{document}
+
